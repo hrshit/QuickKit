@@ -1,11 +1,13 @@
+// import { Container } from "postcss";
 import "./App.css";
+// import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <div>QuickKit application</div>
-    </>
-  );
+      <Hero />
+  );  
+  
 }
 
 export default App;

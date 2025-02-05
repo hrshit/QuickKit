@@ -1,7 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import "tailwindcss";
 
+@theme {
+  --color-dark: #0C0C0C;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-button: #0036C2;
+  --color-blue-normal : #205BF1;
+  --color-red-dark: #C50230;
+  --color-red-normal: #F12052;
+  --color-red-light: #FA787F;
+  --color-white-color: #FBFBFB;
+  --color-light-green: #64CCC5;
+
+
+}
