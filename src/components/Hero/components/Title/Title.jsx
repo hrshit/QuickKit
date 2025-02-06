@@ -1,7 +1,35 @@
 const Title = () => {
+    /* Title */
+
+/* Auto layout */
+// display: flex;
+// flex-direction: column;
+// align-items: flex-start;
+// padding: 0px;
+// gap: 32px;
+
+// position: absolute;
+// width: 836.92px;
+// height: 398px;
+// left: 260px;
+// top: 238px;
+
+
     return (
-      <div className="m-10 w-[609px] flex flex-col gap-10 ">
-        <button className="bg-white-color w-[248px] H-[48px] text-black p-[10px] rounded-full  flex gap-1">
+      <div className="w-4xl flex flex-col text-start  gap-8 mt-24">
+        <h1 className="text-6xl text-white-color font-Roboto font-semibold ">
+          Ready to take your{" "}
+          <span className="text-light-green font-Roboto block">Business Growth </span> 
+          to the next level?
+        </h1>
+        <div className="text-white-color flex gap-1 font-Dans w-md">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa
+            libero egestas malesuada viverra gravida libero cursus nulla leo
+            pulvinar.
+          </p>
+        </div>
+        <button className="bg-white-color w-[248px] H-[48px] text-black p-[10px] rounded-full  flex gap-1 font-Roboto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -18,20 +46,9 @@ const Title = () => {
           </svg>
           Start your Free trial
         </button>
-        <div className="text-white-color flex gap-1">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa
-            libero egestas malesuada viverra gravida libero cursus nulla leo
-            pulvinar.
-          </p>
-        </div>
-        <div className="text-4xl text-white-color ">
-          Ready to take your{" "}
-          <span className="text-light-green">Business Growth </span> to the next
-          level?
-        </div>
       </div>
     );
 }
 
 export { Title }
+
