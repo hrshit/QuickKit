@@ -36,9 +36,9 @@ const Project = () => {
                       <path
                         d="M12 9L16.6667 13.6667L12 18.3333"
                         stroke="#FBFBFB"
-                        stroke-width="1.55439"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        // stroke-width="1.55439"
+                        // stroke-linecap="round"
+                        // stroke-linejoin="round"
                       />
                     </svg>
                     Start your Free trial
