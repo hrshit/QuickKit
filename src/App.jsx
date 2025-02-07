@@ -4,12 +4,16 @@
 
 import { Service } from "./components/Service";
 import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Process } from "./components/process";
 
 function App() {
   return (
     <>
       <Hero />
       <Service/>
+      <About/>
+      <Process/>
     </>
   );  
   

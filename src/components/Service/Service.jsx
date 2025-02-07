@@ -20,7 +20,7 @@ const Service = () => {
                                         desc={"Our team creates engaging and shareable content that resonates with your audience, drives organic traffic"}
                             />
                             <ServiceBox title={"Graphic Design "} 
-                                        src={"/serviceIcon/graphicDesign.svg"}
+                                        src={"/serviceIcon/graphic.svg"}
                                         desc={"Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate."}
                             />
                             <ServiceBox title={"Digital Marketing "} 
@@ -34,7 +34,7 @@ const Service = () => {
                                         desc={"We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional."}
                             />
                             <ServiceBox title={"IT Consulting"} 
-                                        src={"/serviceIcon/itConsult.svg"}
+                                        src={"/serviceIcon/ItConsult.svg"}
                                         desc={"IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services"}
                             />
                             <ServiceBox title={"Brand Identity "} 
