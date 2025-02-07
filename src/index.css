@@ -11,9 +11,9 @@
   --color-red-light: #FA787F;
   --color-white-color: #FBFBFB;
   --color-light-green: #64CCC5;
-  --color-grey: #F4F4F4;
+  --color-light-grey: #F4F4F4;
+  /* --color-grey: #F4F4F4; */
   --font-Roboto: Roboto-serif;
-  --font-DM-Sans: DM-Sans;
-  
+  --font-DM-Sans: DM Sans;
 
 }

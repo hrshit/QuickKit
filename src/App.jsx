@@ -6,6 +6,8 @@ import { Service } from "./components/Service";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Process } from "./components/process";
+import { Project } from "./components/Project/Project";
+import { Testimonial } from "./components/Testimonial";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Hero />
       <Service/>
       <About/>
-      <Process/>
+      <Process />
+      <Project />
+      <Testimonial/>
     </>
   );  
   
