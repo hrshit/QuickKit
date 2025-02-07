@@ -4,7 +4,7 @@ export { Container} from "../Container"
 
 const Testimonial = () => {
     return (
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-20">
         <Container>
           <div className="flex flex-col items-center gap-9 bg-light-grey p-6 rounded-3xl">
             <img src="/testimonial/user.svg" className="" alt="" />
