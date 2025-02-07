@@ -3,7 +3,7 @@
 const Header = () => {
     return (
       <div className="flex flex-row justify-between">
-        <img src="/logo.svg" className="w-[154px] h-[39.97px]" alt="Quickit Logo" />
+        <img src="/logo.svg" className="w-[154px] h-[33.97px]" alt="Quickit Logo" />
         <div>
           <div className="hidden md:flex space-x-8">
             <a href="#" className="text-white hover:text-blue-500">
