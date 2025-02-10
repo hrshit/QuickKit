@@ -47,9 +47,9 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter text..."
-                  className="w-full border border-gray-300 rounded-lg py-2 pr-12 bg-white pl-4 focus:ring-2 rounded-full focus:ring-blue-500 focus:outline-none"
+                  className="w-full border border-gray-300 rounded-lg py-2 pr-12 bg-white pl-4 focus:ring-2 rounded-full focus:dark focus:outline-none"
                 />
-                <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark text-white px-3 py-1 rounded-full hover:bg-blue-600">
+                <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark text-white px-3 py-1 rounded-full hover:grey ">
                   subscribe
                 </button>
               </div>
