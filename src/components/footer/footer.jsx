@@ -1,12 +1,46 @@
 import { Container } from "../Container";
+import { easeIn, easeOut, motion } from "framer-motion";
 
 const Footer = () => {
+  const container = {
+    hidden: { opacity: 1 }, // Keep container visible
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.5, // Base stagger effect (optional)
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 50 },
+    show: {
+      opacity: 1,
+      y: 1,
+      transition: {
+        duration: 0.1,
+        easeIn,
+        // Progressively increase delay
+      },
+    },
+  };
+
   return (
     <div className="flex justify-center bg-dark ">
       <Container>
         <div className="flex flex-col p-10 gap-10">
-          <div className="grid grid-cols-6 gap-10">
-            <div className="flex flex-col col-span-2  gap-9">
+          <motion.div
+            className="grid grid-cols-6 gap-10"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <motion.div
+              variants={item}
+              className="flex flex-col col-span-2  gap-9"
+            >
               <img
                 src="/logo.svg"
                 className="w-[154px] h-[33.97px]"
@@ -16,8 +50,8 @@ const Footer = () => {
                 We’re a team of strategic creator and digital innovator, united
                 focus in our pursuit of mastery and joyful.{" "}
               </p>
-            </div>
-            <div className="flex flex-col gap-4">
+            </motion.div>
+            <motion.div variants={item} className="flex flex-col gap-4">
               <h1 className="text-white font-semibold text-xl font-Roboto">
                 Pages
               </h1>
@@ -27,8 +61,8 @@ const Footer = () => {
               <p className="text-white  text-sm ">Contact us</p>
               <p className="text-white  text-sm ">Portfolio</p>
               <p className="text-white  text-sm ">Portfolio Single</p>
-            </div>
-            <div className="flex flex-col gap-4">
+            </motion.div>
+            <motion.div variants={item} className="flex flex-col gap-4">
               <h1 className="text-white font-semibold text-xl font-Roboto">
                 Utility Pages
               </h1>
@@ -38,8 +72,11 @@ const Footer = () => {
               <p className="text-white  text-sm ">Changelog</p>
               <p className="text-white  text-sm ">Error 404</p>
               <p className="text-white  text-sm ">Password Protected</p>
-            </div>
-            <div className="relative flex flex-col gap-4 col-span-2">
+            </motion.div>
+            <motion.div
+              variants={item}
+              className="relative flex flex-col gap-4 col-span-2"
+            >
               <h1 className="text-white font-semibold text-xl font-Roboto">
                 Subscribe
               </h1>
@@ -53,8 +90,8 @@ const Footer = () => {
                   subscribe
                 </button>
               </div>
-            </div>
-                  </div>
+            </motion.div>
+          </motion.div>
           <br className="bg:white" />
           <div className="grid grid-cols-4 gap-14"></div>
         </div>
@@ -81,7 +118,6 @@ export { Footer };
 
 // /* Light Grey */
 // color: #F4F4F4;
-
 
 // /* Inside auto layout */
 // flex: none;
